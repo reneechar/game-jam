@@ -41,7 +41,21 @@ func _fixed_process(delta):
 	if (motion.length() > IDLE_SPEED*0.09):
 		if (Input.is_action_pressed("ui_left")):
 			anim = "walk_l"
-
+		if (Input.is_action_pressed("ui_right")):
+			anim = "walk_r"
+		if (Input.is_action_pressed("ui_up")):
+			anim = "walk_u"
+		if (Input.is_action_pressed("ui_down")):
+			anim = "walk_d"
+	else:
+		if (RayNode.get_rotd() == 180):
+			anim = "idle_u"
+		if (RayNode.get_rotd() == 0):
+			anim = "idle_d"
+		if (RayNode.get_rotd() == -90):
+			anim = "idle_l"
+		if (RayNode.get_rotd() == 90):
+			anim = "idle_r"
 	
 	if anim != animNew:
 		animNew = anim
