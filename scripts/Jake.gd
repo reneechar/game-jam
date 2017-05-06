@@ -3,10 +3,16 @@ extends KinematicBody2D
 export var MOTION_SPEED = 140
 var RayNode
 
+var IDLE_SPEED = 10
+var JakeAnimNode
+var anim = ""
+var animNew = ""
+
 func _ready():
 	set_fixed_process(true)
 	
 	RayNode = get_node("RayCastDragon")
+	JakeAnimNode = get_node("AnimatedSpriteDragon")
 	
 func _fixed_process(delta):
 	
@@ -29,4 +35,16 @@ func _fixed_process(delta):
 		
 	motion = motion.normalized()*MOTION_SPEED*delta
 	move(motion)
+	
+	#animations
+	
+	if (motion.length() > IDLE_SPEED*0.09):
+		if (Input.is_action_pressed("ui_left")):
+			anim = "walk_l"
+
+	
+	if anim != animNew:
+		animNew = anim
+		JakeAnimNode.play(anim)
+		
 	
