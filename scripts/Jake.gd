@@ -6,7 +6,7 @@ var RayNode
 func _ready():
 	set_fixed_process(true)
 	
-	RayNode = get_node("RayCast2D")
+	RayNode = get_node("RayCastDragon")
 	
 func _fixed_process(delta):
 	
@@ -29,3 +29,4 @@ func _fixed_process(delta):
 		
 	motion = motion.normalized()*MOTION_SPEED*delta
 	move(motion)
+	
