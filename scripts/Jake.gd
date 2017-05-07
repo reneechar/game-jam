@@ -7,18 +7,32 @@ var IDLE_SPEED = 10
 var JakeAnimNode
 var anim = ""
 var animNew = ""
+var count_elements = 5
+var score = 0
 
 func _ready():
 	set_fixed_process(true)
 	
 	RayNode = get_node("RayCastDragon")
 	JakeAnimNode = get_node("AnimatedSpriteDragon")
+
 	
 func _fixed_process(delta):
 	if is_colliding():
-		runDialogue(get_collider().get_name())
+		count_elements -= 1
+		score += 1
 		get_collider().free()
+		
+		get_tree().get_root().get_node("Floor").get_node("SamplePlayer2DEating").play("Discover Redworm")
+		
+		
+	# LabelScoreNode.set_text("Left ... ",String(count_elements))
+	get_parent().get_node("LabelScore").set_text(String(score)+" / 5")
 
+
+	if count_elements == 0:
+		get_tree().change_scene("res://scenes/win.xml")
+	
 	
 	var motion = Vector2()
 	
@@ -65,16 +79,4 @@ func _fixed_process(delta):
 		animNew = anim
 		JakeAnimNode.play(anim)
 		
-func runDialogue(WormName):
-	if WormName == "Prendium":
-		print("Start Dialogue for Prendium")
-	if WormName == "Drizz":
-		print("Start Dialogue for Drizz")
-	if WormName == "TinyTalon":
-		print("Start Dialogue for TinyTalon")
-	if WormName == "FastOut":
-		print("Start Dialogue for FastOut")
-	if WormName == "Mirez":
-		print("Start Dialogue for Mirez")
 	
-		

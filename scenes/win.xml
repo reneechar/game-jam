@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="15" version="2.1" version_name="Godot Engine v2.1.3.stable.official">
+	<ext_resource path="res://sprites/Title Page_Exit.png" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://sprites/you.png" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://sprites/yellowBeardedDragon1_u1.png" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://sprites/Title Page_PlayAgain.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://winlose.tres" type="SampleLibrary" index="2"></ext_resource>
+	<ext_resource path="res://sprites/yellowBeardedDragon2_u2.png" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://sprites/Congratulations.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://sprites/bg_intro_1.jpg" type="Texture" index="0"></ext_resource>
+	<ext_resource path="res://sprites/win.png" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://sprites/Title Page_PlayAgain2.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://sprites/Title Page_Exit2.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://scripts/winningsound.gd" type="Script" index="3"></ext_resource>
+	<ext_resource path="res://scenes/win.gd" type="Script" index="1"></ext_resource>
+	<resource type="Animation" path="local://1">
+		<string name="resource/name"> "anim" </string>
+		<real name="length"> 3 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "TextureButtonExit:visibility/visible" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="10"> 				0, 0.2, 0.3, 0.5, 0.6, 0.8, 1, 1.2, 1.4, 1.5 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="10"> 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="10" shared="false">
+				<bool> False </bool>
+				<bool> True </bool>
+				<bool> False </bool>
+				<bool> True </bool>
+				<bool> False </bool>
+				<bool> True </bool>
+				<bool> False </bool>
+				<bool> True </bool>
+				<bool> False </bool>
+				<bool> True </bool>
+			</array>
+		</dictionary>
+		<string name="tracks/1/type"> "value" </string>
+		<node_path name="tracks/1/path"> "TextureButtonPlayAgain:visibility/visible" </node_path>
+		<int name="tracks/1/interp"> 1 </int>
+		<bool name="tracks/1/imported"> False </bool>
+		<dictionary name="tracks/1/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="10"> 				0, 0.2, 0.3, 0.5, 0.6, 0.8, 1, 1.2, 1.4, 1.5 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="10"> 				1, 1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="10" shared="false">
+				<bool> False </bool>
+				<bool> True </bool>
+				<bool> False </bool>
+				<bool> True </bool>
+				<bool> False </bool>
+				<bool> True </bool>
+				<bool> False </bool>
+				<bool> True </bool>
+				<bool> False </bool>
+				<bool> True </bool>
+			</array>
+		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "TextureFrameDragon:texture" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<bool name="tracks/2/imported"> False </bool>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="7"> 				0, 0.5, 1, 1.5, 2, 2.5, 3 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="7"> 				1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="7" shared="false">
+				<resource  external="8">  </resource>
+				<resource  external="12">  </resource>
+				<resource  external="8">  </resource>
+				<resource  external="12">  </resource>
+				<resource  external="8">  </resource>
+				<resource  external="12">  </resource>
+				<resource  external="8">  </resource>
+			</array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "TextureFrameCongratulations:rect/scale" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<bool name="tracks/3/imported"> False </bool>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 0.5 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "update" </string>
+			<int> 0 </int>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 0.2, 0.2 </vector2>
+				<vector2> 0.5, 0.5 </vector2>
+			</array>
+		</dictionary>
+		<string name="tracks/4/type"> "value" </string>
+		<node_path name="tracks/4/path"> "TextureFrameYou:visibility/visible" </node_path>
+		<int name="tracks/4/interp"> 1 </int>
+		<bool name="tracks/4/imported"> False </bool>
+		<dictionary name="tracks/4/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 0.9 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<bool> False </bool>
+				<bool> True </bool>
+			</array>
+		</dictionary>
+		<string name="tracks/5/type"> "value" </string>
+		<node_path name="tracks/5/path"> "TextureFrameWin:visibility/visible" </node_path>
+		<int name="tracks/5/interp"> 1 </int>
+		<bool name="tracks/5/imported"> False </bool>
+		<dictionary name="tracks/5/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1.5 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<bool> False </bool>
+				<bool> True </bool>
+			</array>
+		</dictionary>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="48">
+				<string> "TextureFrameBg" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "texture" </string>
+				<string> "stretch_mode" </string>
+				<string> "script/script" </string>
+				<string> "TextureFrame" </string>
+				<string> "SamplePlayer2D" </string>
+				<string> "params/volume_db" </string>
+				<string> "params/pitch_scale" </string>
+				<string> "params/attenuation/min_distance" </string>
+				<string> "params/attenuation/max_distance" </string>
+				<string> "params/attenuation/distance_exp" </string>
+				<string> "config/polyphony" </string>
+				<string> "config/samples" </string>
+				<string> "config/pitch_random" </string>
+				<string> "TextureButtonPlayAgain" </string>
+				<string> "toggle_mode" </string>
+				<string> "enabled_focus_mode" </string>
+				<string> "shortcut" </string>
+				<string> "textures/normal" </string>
+				<string> "textures/pressed" </string>
+				<string> "params/resize_mode" </string>
+				<string> "params/scale" </string>
+				<string> "params/stretch_mode" </string>
+				<string> "TextureButton" </string>
+				<string> "TextureButtonExit" </string>
+				<string> "TextureFrameDragon" </string>
+				<string> "rect/scale" </string>
+				<string> "TextureFrameCongratulations" </string>
+				<string> "TextureFrameYou" </string>
+				<string> "expand" </string>
+				<string> "TextureFrameWin" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "anims/anim" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 9 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="271"> 				-1, -1, 12, 0, -1, 11, 1, 0, 2, 0, 3, 1, 4, 1, 5, 2, 6, 2, 7, 3, 8, 4, 9, 5, 10, 6, 11, 7, 0, 0, 0, 13, 13, -1, 9, 14, 2, 15, 8, 16, 8, 17, 9, 18, 8, 19, 1, 20, 10, 21, 2, 11, 11, 0, 0, 0, 31, 22, -1, 16, 1, 12, 2, 0, 3, 1, 4, 1, 5, 13, 6, 14, 7, 15, 8, 16, 23, 12, 24, 1, 25, 17, 26, 18, 27, 19, 28, 6, 29, 20, 30, 6, 0, 0, 0, 31, 32, -1, 16, 1, 12, 2, 0, 3, 1, 4, 1, 5, 21, 6, 22, 7, 23, 8, 24, 23, 12, 24, 1, 25, 17, 26, 25, 27, 26, 28, 6, 29, 20, 30, 6, 0, 0, 0, 12, 33, -1, 11, 34, 27, 1, 0, 2, 0, 3, 1, 4, 1, 5, 28, 6, 29, 7, 30, 8, 31, 9, 32, 10, 6, 0, 0, 0, 12, 35, -1, 11, 34, 33, 1, 0, 2, 0, 3, 1, 4, 1, 5, 34, 6, 35, 7, 36, 8, 37, 9, 38, 10, 6, 0, 0, 0, 12, 36, -1, 11, 1, 0, 2, 0, 3, 1, 4, 1, 5, 39, 6, 40, 7, 41, 8, 42, 9, 43, 37, 0, 10, 6, 0, 0, 0, 12, 38, -1, 11, 1, 0, 2, 0, 3, 1, 4, 1, 5, 44, 6, 45, 7, 46, 8, 47, 9, 48, 37, 0, 10, 6, 0, 0, 0, 39, 39, -1, 8, 40, 49, 41, 2, 42, 50, 43, 51, 44, 0, 45, 8, 46, 52, 47, 53, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="54" shared="false">
+				<bool> True </bool>
+				<int> 2 </int>
+				<real> 0 </real>
+				<real> 1025 </real>
+				<real> 600 </real>
+				<resource  external="0">  </resource>
+				<int> 0 </int>
+				<resource  external="1">  </resource>
+				<real> 1 </real>
+				<real> 2048 </real>
+				<resource  external="2">  </resource>
+				<resource  external="3">  </resource>
+				<bool> False </bool>
+				<real> -4 </real>
+				<real> 352 </real>
+				<real> 476.000031 </real>
+				<real> 712 </real>
+				<resource name=""></resource>				<resource  external="4">  </resource>
+				<resource  external="5">  </resource>
+				<vector2> 0.3, 0.3 </vector2>
+				<real> 608 </real>
+				<real> 342 </real>
+				<real> 1088 </real>
+				<real> 702 </real>
+				<resource  external="6">  </resource>
+				<resource  external="7">  </resource>
+				<vector2> 0.2, 0.2 </vector2>
+				<real> 436 </real>
+				<real> 219 </real>
+				<real> 1636 </real>
+				<real> 1819 </real>
+				<resource  external="8">  </resource>
+				<vector2> 0.5, 0.5 </vector2>
+				<real> 147 </real>
+				<real> -154 </real>
+				<real> 1747 </real>
+				<real> 1046 </real>
+				<resource  external="9">  </resource>
+				<real> 328 </real>
+				<real> 100 </real>
+				<real> 616 </real>
+				<real> 288 </real>
+				<resource  external="10">  </resource>
+				<real> 366 </real>
+				<real> -44 </real>
+				<real> 938 </real>
+				<real> 433 </real>
+				<resource  external="11">  </resource>
+				<int> 1 </int>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://1">  </resource>
+				<array  len="0" shared="false">
+				</array>
+				<string> "anim" </string>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
