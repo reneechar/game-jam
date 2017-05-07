@@ -16,8 +16,7 @@ func _ready():
 	
 func _fixed_process(delta):
 	if is_colliding():
-		
-		
+		runDialogue(get_collider().get_name())
 		get_collider().free()
 
 	
@@ -66,4 +65,16 @@ func _fixed_process(delta):
 		animNew = anim
 		JakeAnimNode.play(anim)
 		
+func runDialogue(WormName):
+	if WormName == "Prendium":
+		print("Start Dialogue for Prendium")
+	if WormName == "Drizz":
+		print("Start Dialogue for Drizz")
+	if WormName == "TinyTalon":
+		print("Start Dialogue for TinyTalon")
+	if WormName == "FastOut":
+		print("Start Dialogue for FastOut")
+	if WormName == "Mirez":
+		print("Start Dialogue for Mirez")
 	
+		
