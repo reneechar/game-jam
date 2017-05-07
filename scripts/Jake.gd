@@ -15,6 +15,11 @@ func _ready():
 	JakeAnimNode = get_node("AnimatedSpriteDragon")
 	
 func _fixed_process(delta):
+	if is_colliding():
+		
+		
+		get_collider().free()
+
 	
 	var motion = Vector2()
 	
