@@ -48,7 +48,7 @@ func _fixed_process(delta):
 		if (Input.is_action_pressed("ui_down")):
 			anim = "walk_d"
 	else:
-		if (RayNode.get_rotd() == 180):
+		if (RayNode.get_rotd() == 180): 
 			anim = "idle_u"
 		if (RayNode.get_rotd() == 0):
 			anim = "idle_d"

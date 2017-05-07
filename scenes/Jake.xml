@@ -12,7 +12,7 @@
 	<ext_resource path="res://sprites/yellowBeardedDragon2_r2.png" type="Texture" index="7"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2 name="extents"> 10, 14.04 </vector2>
+		<vector2 name="extents"> 10, 16.64 </vector2>
 
 	</resource>
 	<resource type="SpriteFrames" path="local://2">
@@ -191,7 +191,7 @@
 			<array  len="25" shared="false">
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 32.6154, -0, 0, 15.3846, 16, 0 </matrix32>
+				<matrix32> 32.6154, -0, 0, 15.3846, -16, -16 </matrix32>
 				<int> 1 </int>
 				<real> 0.08 </real>
 				<resource  external="0">  </resource>
@@ -202,7 +202,7 @@
 				<int> 10000000 </int>
 				<real> 5 </real>
 				<real> 0.2 </real>
-				<vector2> 16, 0 </vector2>
+				<vector2> -16, -16 </vector2>
 				<vector2> 32.6154, 15.3846 </vector2>
 				<int> 0 </int>
 				<vector2> 0, 9.53674e-07 </vector2>
